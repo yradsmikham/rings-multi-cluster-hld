@@ -9,12 +9,12 @@ steps:
   persistCredentials: true
   clean: true
 
- - bash: |
-     curl $BEDROCK_BUILD_SCRIPT > build.sh
-     chmod +x ./build.sh
-   displayName: Download script
-   env:
-     BEDROCK_BUILD_SCRIPT: https://raw.githubusercontent.com/microsoft/bedrock/ecaea986e7a415e20f27aa9ff2f4d7660cf84174/gitops/azure-devops/build.sh
+- bash: |
+    curl $BEDROCK_BUILD_SCRIPT > build.sh
+    chmod +x ./build.sh
+  displayName: Download script
+  env:
+    BEDROCK_BUILD_SCRIPT: https://raw.githubusercontent.com/microsoft/bedrock/ecaea986e7a415e20f27aa9ff2f4d7660cf84174/gitops/azure-devops/build.sh
 
 - task: ShellScript@2
   displayName: Validate fabrikate definitions
