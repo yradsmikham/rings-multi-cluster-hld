@@ -1,12 +1,6 @@
 name: hello-rings
 type: component
 subcomponents:
-- name: hello-rings-featureb
-  type: helm
-  source: https://github.com/bnookala/hello-rings
-  method: git
-  path: chart
-  branch: featureb
 - name: hello-rings-featurea
   type: helm
   source: https://github.com/bnookala/hello-rings
@@ -19,3 +13,15 @@ subcomponents:
   method: git
   path: chart
   branch: master
+- name: rings-multi-cluster-master
+  type: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: master
+- name: hello-rings-featureb
+  type: helm
+  source: https://github.com/bnookala/hello-rings
+  method: git
+  path: chart
+  branch: featureb
