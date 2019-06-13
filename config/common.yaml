@@ -18,4 +18,4 @@ subcomponents:
     config:
       image:
         repository: hellorings.azurecr.io/hellorings
-        tag: rings-multi-cluster-master-3998
+        tag: rings-multi-cluster-master-4036
